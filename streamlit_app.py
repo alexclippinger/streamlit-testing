@@ -17,7 +17,7 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from addresses limit 10;")
+rows = run_query("SELECT * from public.addresses limit 10;")
 
 # Print results.
 for row in rows:
